@@ -11,10 +11,10 @@ const linkArr = Object.keys(links) as (keyof typeof links)[];
 export function Links() {
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex flex-col space-y-1.5">
+      <div className="flex flex-col space-y-2">
         <h2 className="font-bold text-2xl font-heading">Links</h2>
         <p className="text-muted-foreground font-medium text-sm">
-          Get in touch with me!.
+          Get in touch with me.
         </p>
       </div>
       {linkArr.map((link) => (
