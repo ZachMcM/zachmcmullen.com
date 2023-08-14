@@ -25,7 +25,7 @@ export const projects: Project[] = [
     language: "Typescript"
   },
   {
-    title: "Darth Vorlde",
+    title: "Darth Vordle",
     description: "A Star Wars Wordle inspired guessing game where players attempt to guess a mystery Star Wars Character.",
     github: "https://github.com/ZachMcM/DarthVordle",
     site: "https://darthvordle.com",
@@ -33,7 +33,7 @@ export const projects: Project[] = [
   },
   {
     title: "Riemann Sum Calculator",
-    description: "A typesafe utility class for calculating riemann sums in the NodeJS enviorment.",
+    description: "A type safe utility class for calculating riemann sums in the NodeJS enviorment.",
     github: "https://github.com/ZachMcM/riemann-sum-calculator",
     site: "https://simple-integral-calculator.vercel.app/",
     language: "TypeScript"
