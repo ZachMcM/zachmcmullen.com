@@ -1,20 +1,11 @@
 import { Project } from "@/data/projects";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import {
-  CircleIcon,
-  ExternalLinkIcon,
-  GitHubLogoIcon,
-  Link1Icon,
-  Link2Icon,
-} from "@radix-ui/react-icons";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { ExternalLink, Github } from "lucide-react";
@@ -30,13 +21,6 @@ export function ProjectCard({ project }: { project: Project }) {
       </CardHeader>
       <CardFooter>
         <div className="flex items-center gap-4">
-          <CircleIcon
-            className={cn(
-              "h-4 w-4 text-zinc-400",
-              simplifiedLang == "typescript" && "text-sky-400",
-              simplifiedLang == "javascript" && "text-yellow-400"
-            )}
-          />
           <p className="text-muted-foreground text-sm">{project.language}</p>
           <div className="flex items-center text-muted-foreground">
             <Link href={project.github}>
