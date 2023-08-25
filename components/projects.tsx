@@ -1,7 +1,6 @@
 import { projects } from "@/data/projects";
 import { ProjectCard } from "./projects-card";
 import { uuid } from "uuidv4";
-import { Separator } from "./ui/separator";
 
 export function Projects() {
   return (
@@ -15,7 +14,6 @@ export function Projects() {
       {projects.map((project) => (
         <ProjectCard project={project} key={uuid()} />
       ))}
-      <Separator/>
     </div>
   );
 }
