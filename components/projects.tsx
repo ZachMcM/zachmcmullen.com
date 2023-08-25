@@ -6,8 +6,8 @@ export function Projects() {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-col space-y-2">
-        <h2 className="font-bold text-2xl font-heading">Projects</h2>
-        <p className="text-muted-foreground font-medium text-sm">
+        <h2 className="font-bold text-2xl font-heading underline">Projects</h2>
+        <p className="text-muted-foreground leading-6">
           All my shipped projects.
         </p>
       </div>
