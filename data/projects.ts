@@ -8,6 +8,13 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Social Clone",
+    description: "A modern full stack social media app insipred by instagram.",
+    github: "https://github.com/ZachMcM/social-clone",
+    site: "https://social-clone.vercel.app/",
+    language: "TypeScript"
+  },
+  {
     title: "Studium AI",
     description: `We harnesses the power of artificial intelligence
     to help improve students' critical thinking skills with AI, 
