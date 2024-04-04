@@ -1,7 +1,6 @@
 import { links } from "@/config/links";
 import { Separator } from "./ui/separator";
 import { uuid } from "uuidv4";
-import Link from "next/link";
 import { Button } from "./ui/button";
 import { TwitterIcon } from "lucide-react";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
@@ -18,7 +17,7 @@ export function Links() {
         </p>
       </div>
       {linkArr.map((link) => (
-        <a href={link} key={uuid()}>
+        <a href={links[link]} key={uuid()}>
           <Button variant="link" className="px-0">
             {link == "twitter" && <TwitterIcon className="h-4 w-4 mr-2" />}
             {link == "github" && <GitHubLogoIcon className="h-4 w-4 mr-2" />}
