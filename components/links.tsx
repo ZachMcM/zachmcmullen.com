@@ -18,7 +18,7 @@ export function Links() {
         </p>
       </div>
       {linkArr.map((link) => (
-        <Link href={link} key={uuid()}>
+        <a href={link} key={uuid()}>
           <Button variant="link" className="px-0">
             {link == "twitter" && <TwitterIcon className="h-4 w-4 mr-2" />}
             {link == "github" && <GitHubLogoIcon className="h-4 w-4 mr-2" />}
@@ -27,7 +27,7 @@ export function Links() {
             )}
             {links[link]}
           </Button>
-        </Link>
+        </a>
       ))}
       <Separator />
     </div>
