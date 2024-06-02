@@ -46,7 +46,5 @@ export async function getNowPlaying() {
 
   const data = await res.json()
 
-  console.log(data.item)
-
   return data
 }

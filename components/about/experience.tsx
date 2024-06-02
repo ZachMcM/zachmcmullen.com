@@ -11,7 +11,7 @@ export function Experience() {
       <p className="text-3xl font-bold text-fuchsia-400">Experience</p>
       <a href={resumeLink}>
         {" "}
-        <Button className="bg-orange-950 hover:bg-orange-950/80 text-orange-400 duration-500">
+        <Button className="dark:bg-orange-950 dark:hover:bg-orange-950/80 dark:text-orange-400 bg-orange-200 hover:bg-orange-200/80 text-orange-700 duration-500">
           Resume <Download className="ml-2 h-4 w-4" />
         </Button>
       </a>
@@ -22,7 +22,7 @@ export function Experience() {
           <div className=" h-16 w-16 relative">
             <Image
               src={`/images/${exp.image}`}
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg shadow-lg"
               alt={exp.name}
               fill
             />

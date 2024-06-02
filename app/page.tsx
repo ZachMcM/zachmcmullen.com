@@ -36,7 +36,7 @@ export default function Home() {
             Featured Projects
           </p>
           <Link href="/projects">
-            <Button className="bg-emerald-950 text-emerald-400 hover:bg-emerald-950/80">
+            <Button className="dark:bg-emerald-950 bg-emerald-200 text-emerald-700 hover:bg-emerald-200/80 dark:text-emerald-400 dark:hover:bg-emerald-950/80">
               View All <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
