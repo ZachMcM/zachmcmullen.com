@@ -1,10 +1,10 @@
 import { getNowPlaying } from "@/lib/spotify"
-import { NextResponse } from "next/server"
 
 export async function GET() {
   try {
   const nowPlaying = await getNowPlaying()
-  return NextResponse.json({
+  console.log(nowPlaying)
+  return Response.json({
     name: nowPlaying.item.name,
     artists: nowPlaying.item.artists.map((artist: any) => artist.name),
     album: nowPlaying.item.album.name,
@@ -13,7 +13,7 @@ export async function GET() {
     url: nowPlaying.item.external_urls.spotify
   }) } catch (error) {
     console.error(error)
-    return NextResponse.json(null)
+    return Response.json(null)
   }
 }
 
