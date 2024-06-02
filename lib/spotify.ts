@@ -17,6 +17,7 @@ export type Song = {
 }
 
 async function getAccessToken() {
+  console.log(basic)
   const res = await fetch(TOKEN_URL, {
     method: "POST",
     headers: {
