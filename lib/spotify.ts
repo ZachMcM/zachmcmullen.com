@@ -37,6 +37,7 @@ async function getAccessToken() {
 
 export async function getNowPlaying() {
   const accessToken = await getAccessToken()
+  console.log(accessToken)
 
   const res = await fetch(NOW_PLAYING_URL, {
     headers: {
@@ -46,5 +47,6 @@ export async function getNowPlaying() {
 
   const data = await res.json()
 
+  console.log(data)
   return data
 }
