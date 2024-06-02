@@ -2,6 +2,7 @@ import { getNowPlaying } from "@/lib/spotify"
 import { NextResponse } from "next/server"
 
 export async function GET() {
+  try {
   const nowPlaying = await getNowPlaying()
   return NextResponse.json({
     name: nowPlaying.item.name,
@@ -10,6 +11,9 @@ export async function GET() {
     albumImageUrl: nowPlaying.item.album.images[0].url,
     previewUrl: nowPlaying.item.preview_url,
     url: nowPlaying.item.external_urls.spotify
-  })
+  }) } catch (error) {
+    console.error(error)
+    return NextResponse.json(null)
+  }
 }
 
