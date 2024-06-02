@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 import { siteConfig } from "@/config/site";
+import { Footer } from "@/components/footer";
+import { QueryProvider } from "@/components/query-provider";
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -18,10 +20,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <main className="container max-w-3xl mx-auto w-full flex flex-col gap-16 py-16">
+          <QueryProvider>
             <Header />
-            {children}
-          </main>
+            <main className="mx-auto max-w-2xl w-full flex py-16 lg:py-24 md:px-0 px-8 min-h-[100vh]">
+              {children}
+            </main>
+            <Footer />
+          </QueryProvider>
         </ThemeProvider>
       </body>
     </html>
