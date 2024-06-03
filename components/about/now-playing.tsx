@@ -16,7 +16,7 @@ export function NowPlaying() {
   } = useQuery({
     queryKey: ["now-playing"],
     queryFn: async (): Promise<Song> => {
-      const res = await fetch("/api/now-playing");
+      const res = await fetch(process.env.NEXT_PUBLIC_SPOTIFY_API!);
       if (!res.ok) {
         throw new Error("No song playing currently");
       }
