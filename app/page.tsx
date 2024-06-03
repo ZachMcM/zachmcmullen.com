@@ -12,7 +12,7 @@ export default function Home() {
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-2">
           <div className="w-max">
-            <p className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-3xl font-bold text-white">
+            <p className="animate-typing overflow-hidden whitespace-nowrap bg-background border-r-4 border-r-white pr-5 text-3xl font-bold text-white">
               Hello, World!
             </p>
           </div>
