@@ -1,5 +1,6 @@
 import { Links } from "@/components/links";
 import { ProjectCard } from "@/components/projects-card";
+import { TypewriterWrapper } from "@/components/typewriter-wrapper";
 import { Button } from "@/components/ui/button";
 import { projects } from "@/data/projects";
 import { snippets } from "@/data/snippets";
@@ -11,11 +12,7 @@ export default function Home() {
     <div className="flex flex-col gap-16">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-2">
-          <div className="w-max">
-            <p className="animate-typing overflow-hidden whitespace-nowrap bg-background border-r-4 border-r-white pr-5 text-3xl font-bold text-white">
-              Hello, World!
-            </p>
-          </div>
+          <TypewriterWrapper/>
           <p className="font-bold text-3xl">
             I'm <span className="text-sky-400">Zach McMullen</span>
           </p>
