@@ -9,6 +9,7 @@ export function Skills() {
     <div className="flex flex-wrap gap-3">
       {skills.map((skill, i) => (
         <div
+          key={i}
           className={cn(
             i % 1 == 0 && "dark:hover:bg-emerald-950 dark:hover:text-emerald-400 hover:bg-emerald-200 hover:text-emerald-700",
             i % 2 == 0 && "dark:hover:bg-fuchsia-950 dark:hover:text-fuchsia-400 hover:bg-fuchsia-200 hover:text-fuchsia-700",

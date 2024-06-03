@@ -34,7 +34,7 @@ export default function About() {
       </div>
       <Skills/>
       <Experience/>
-      {/* <NowPlaying/> */}
+      <NowPlaying/>
     </div>
   );
 }
