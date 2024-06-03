@@ -1,4 +1,4 @@
-import { SiC, SiCss3, SiExpress, SiGit, SiHtml5, SiJavascript, SiNextdotjs, SiNodedotjs, SiPrisma, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiC, SiCss3, SiExpo, SiExpress, SiGit, SiHtml5, SiJavascript, SiNextdotjs, SiNodedotjs, SiPrisma, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
 type Skill = {
@@ -58,5 +58,9 @@ export const skills: Skill[] = [
   {
     name: "Git",
     icon: <SiGit/>
-  }
+  },
+  {
+    name: "Expo",
+    icon: <SiExpo/>
+  },
 ]
