@@ -18,15 +18,7 @@ export const projects: Project[] = [
     featured: true,
     tags: ["React Native", "Prisma", "Expo", "NodeJS", "Express"]
   },
-  {
-    title: "Social Clone",
-    description: "A modern full stack social media app insipred by instagram.",
-    github: "https://github.com/ZachMcM/social-clone",
-    site: "https://social-clone.vercel.app/",
-    language: "TypeScript",
-    featured: false,
-    tags: ["React", "Prisma", "Next.js", "TypeScript", "TailwindCSS"]
-  },
+
   {
     title: "Studium AI",
     description: `We harnesses the power of artificial intelligence
@@ -39,6 +31,14 @@ export const projects: Project[] = [
     tags: ["React", "Prisma", "Next.js", "TailwindCSS"]
   },
   {
+    title: "create-zachmcm-app",
+    description: "A CLI for generating the boilerplate for an Express.js server using Typescript.",
+    github: "https://github.com/ZachMcM/create-zachmcm-app",
+    language: "TypeScript",
+    featured: true,
+    tags: ["Node.js", "Express.js", "CLI"]
+  },
+  {
     title: "Attack on Titan API",
     description: `A RESTful API that allows you to retrieve information about characters, 
     episodes, locations, organizations, and titans from the popular anime and manga series Attack on Titan.`,
@@ -47,6 +47,15 @@ export const projects: Project[] = [
     language: "Typescript",
     featured: true,
     tags: ["Node.js", "Express"]
+  },
+  {
+    title: "Social Clone",
+    description: "A modern full stack social media app insipred by instagram.",
+    github: "https://github.com/ZachMcM/social-clone",
+    site: "https://social-clone.vercel.app/",
+    language: "TypeScript",
+    featured: false,
+    tags: ["React", "Prisma", "Next.js", "TypeScript", "TailwindCSS"]
   },
   {
     title: "Darth Vordle",

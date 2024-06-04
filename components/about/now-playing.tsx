@@ -2,9 +2,11 @@
 
 import { Song } from "@/lib/spotify";
 import { useQuery } from "@tanstack/react-query";
-import Image from "next/image";
-import { Skeleton } from "../ui/skeleton";
 import { Music } from "lucide-react";
+import Image from "next/image";
+import { Card } from "../ui/card";
+import { Skeleton } from "../ui/skeleton";
+import { AiFillSpotify } from "react-icons/ai";
 
 export function NowPlaying() {
   const {
@@ -28,20 +30,18 @@ export function NowPlaying() {
   return (
     <div className="flex flex-col gap-8">
       <p className="text-3xl font-bold text-emerald-400">Now Playing</p>
-      <div className="flex justify-center lg:justify-start">
+      <div className="flex w-full">
         {isFetching || isPending ? (
-          <Skeleton className="h-64 w-64" />
+          <Skeleton className="h-44 w-full" />
         ) : isError ? (
           <div className="border rounded-md flex flex-col justify-center items-center w-60 gap-6 p-6">
             <Music className="h-16 w-16 text-muted-foreground" />
-            <p className="font-medium text-muted-foreground">
-              No song playing
-            </p>
+            <p className="font-medium text-muted-foreground">No song playing</p>
           </div>
         ) : (
           nowPlaying && (
-            <div className="border w-64 rounded-md flex justify-center p-6">
-              <div className="flex flex-col items-center gap-8">
+            <Card className="w-full flex gap-8 justify-between items-center p-6">
+              <div className="flex gap-8 items-center">
                 <div className="bg-muted h-32 w-32 relative rounded-lg">
                   <Image
                     fill
@@ -50,19 +50,31 @@ export function NowPlaying() {
                     alt={nowPlaying.album}
                   />
                 </div>
-                <div className="flex flex-col gap-2 text-center">
-                  <a
-                    href={nowPlaying.url}
-                    className="hover:underline underline-offset-4 font-medium"
-                  >
-                    {nowPlaying.name}
-                  </a>
-                  <p className="text-muted-foreground text-sm">
-                    {nowPlaying.artists.join(", ")}
-                  </p>
+                <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-1">
+                    <a
+                      href={nowPlaying.url}
+                      className="hover:underline underline-offset-4 font-medium"
+                    >
+                      {nowPlaying.name}
+                    </a>
+                    <p className="text-muted-foreground text-sm">
+                      {nowPlaying.artists.join(", ")}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse" />
+                    <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse delay-500" />
+                    <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse delay-1000" />
+                    <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse delay-1500" />
+                    <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse delay-2000" />
+                  </div>
                 </div>
               </div>
-            </div>
+              <a href={nowPlaying.url} className="ont-medium">
+                <AiFillSpotify className="text-muted-foreground hover:text-muted-foreground/80 duration-500 h-11 w-11" />
+              </a>
+            </Card>
           )
         )}
       </div>

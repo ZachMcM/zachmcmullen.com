@@ -30,4 +30,4 @@ export const experiences: Experience[] = [
   }
 ]
 
-export const resumeLink = "https://drive.google.com/file/d/1nVtwCxldXl5fEnVPU7yAdbO-wwCUnF0J/view?usp=sharing"
+export const resumeLink = "https://drive.google.com/file/d/1IW4ZyPCQ_Xub2eP6W0wh-TLDdJJfRW89/view?usp=sharing"

@@ -1,4 +1,4 @@
-import { links } from "@/config/links";
+import { links } from "@/data/links";
 import { Button } from "./ui/button";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { Twitter } from "lucide-react";
