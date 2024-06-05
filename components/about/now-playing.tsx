@@ -39,8 +39,8 @@ export function NowPlaying() {
           </div>
         ) : (
           nowPlaying && (
-            <Card className="w-full flex gap-8 items-center p-6">
-              <div className="bg-muted h-32 w-32 relative rounded-lg">
+            <Card className="w-full flex gap-6 md:gap-8 items-center p-6">
+              <div className="bg-muted h-20 w-20 md:h-32 md:w-32 relative rounded-lg shrink-0">
                 <Image
                   fill
                   className="rounded-lg object-cover"
@@ -52,11 +52,11 @@ export function NowPlaying() {
                 <div className="flex flex-col gap-1">
                   <a
                     href={nowPlaying.url}
-                    className="hover:underline underline-offset-4 font-medium"
+                    className="hover:underline underline-offset-4 font-medium md:text-base text-sm"
                   >
                     {nowPlaying.name}
                   </a>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-muted-foreground text-xs md:text-sm">
                     {nowPlaying.artists.join(", ")}
                   </p>
                 </div>
