@@ -32,7 +32,7 @@ export function Header() {
                     variant={pathname == "/about" ? "secondary" : "ghost"}
                     className={cn(
                       "text-base text-muted-foreground font-semibold hover:text-orange-400",
-                      pathname == "/about" && "text-orange-400"
+                      pathname == "/about" && "text-orange-400",
                     )}
                   >
                     About
@@ -43,7 +43,7 @@ export function Header() {
                     variant={pathname == "/projects" ? "secondary" : "ghost"}
                     className={cn(
                       "text-base text-muted-foreground font-semibold hover:text-fuchsia-400",
-                      pathname == "/projects" && "text-fuchsia-400"
+                      pathname == "/projects" && "text-fuchsia-400",
                     )}
                   >
                     Projects
@@ -51,7 +51,7 @@ export function Header() {
                 </Link>
               </div>
               <ThemeButton />
-              <MobileNav/>
+              <MobileNav />
             </div>
           </div>
         </header>

@@ -32,9 +32,9 @@ export default function About() {
           <Links size="lg" />
         </div>
       </div>
-      <Skills/>
-      <Experience/>
-      <NowPlaying/>
+      <Skills />
+      <Experience />
+      <NowPlaying />
     </div>
   );
 }

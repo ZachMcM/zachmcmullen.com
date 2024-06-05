@@ -10,11 +10,13 @@ export function Footer() {
       <Separator />
       <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:justify-between">
         <div className="flex flex-col gap-2">
-            {" "}
-            <p className="font-medium text-sky-400 text-sm flex items-center gap-2"><Terminal className="h-4 w-4"/> Zach McMullen</p>
-            <p className="text-xs font-medium text-muted-foreground max-w-sm">
-              {snippets[0]}
-            </p>
+          {" "}
+          <p className="font-medium text-sky-400 text-sm flex items-center gap-2">
+            <Terminal className="h-4 w-4" /> Zach McMullen
+          </p>
+          <p className="text-xs font-medium text-muted-foreground max-w-sm">
+            {snippets[0]}
+          </p>
           <Links />
         </div>
         <div className="grid grid-cols-3 lg:grid-cols-2 gap-4 w-max">

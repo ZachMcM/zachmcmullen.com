@@ -4,19 +4,20 @@ export type Project = {
   github: string;
   site?: string;
   language: string;
-  featured: boolean
-  tags: string[]
+  featured: boolean;
+  tags: string[];
 };
 
 export const projects: Project[] = [
   {
     title: "Purdue Hoops",
-    description: "A mobile app for Purdue University students involved in pickup basketball.",
+    description:
+      "A mobile app for Purdue University students involved in pickup basketball.",
     github: "https://github.com/ZachMcM/purdue-hoops",
     site: "https://purdue-hoops.vercel.app",
     language: "TypeScript",
     featured: true,
-    tags: ["React Native", "Prisma", "Expo", "NodeJS", "Express"]
+    tags: ["React Native", "Prisma", "Expo", "NodeJS", "Express"],
   },
 
   {
@@ -28,15 +29,16 @@ export const projects: Project[] = [
     site: "https://studiumai.app",
     language: "TypeScript",
     featured: true,
-    tags: ["React", "Prisma", "Next.js", "TailwindCSS"]
+    tags: ["React", "Prisma", "Next.js", "TailwindCSS"],
   },
   {
     title: "create-zachmcm-app",
-    description: "A CLI for generating the boilerplate for an Express.js server using Typescript.",
+    description:
+      "A CLI for generating the boilerplate for an Express.js server using Typescript.",
     github: "https://github.com/ZachMcM/create-zachmcm-app",
-    language: "TypeScript",
+    language: "JavaScript",
     featured: true,
-    tags: ["Node.js", "Express.js", "CLI"]
+    tags: ["Node.js", "Express.js", "CLI"],
   },
   {
     title: "Attack on Titan API",
@@ -46,7 +48,7 @@ export const projects: Project[] = [
     site: "https://attackontitanapi.com",
     language: "Typescript",
     featured: true,
-    tags: ["Node.js", "Express"]
+    tags: ["Node.js", "Express"],
   },
   {
     title: "Social Clone",
@@ -55,7 +57,7 @@ export const projects: Project[] = [
     site: "https://social-clone.vercel.app/",
     language: "TypeScript",
     featured: false,
-    tags: ["React", "Prisma", "Next.js", "TypeScript", "TailwindCSS"]
+    tags: ["React", "Prisma", "Next.js", "TypeScript", "TailwindCSS"],
   },
   {
     title: "Darth Vordle",
@@ -65,7 +67,7 @@ export const projects: Project[] = [
     site: "https://darthvordle.com",
     language: "JavaScript",
     featured: false,
-    tags: ["HTML", "CSS"]
+    tags: ["HTML", "CSS"],
   },
   {
     title: "Riemann Sum Calculator",
@@ -75,6 +77,6 @@ export const projects: Project[] = [
     site: "https://simple-integral-calculator.vercel.app/",
     language: "TypeScript",
     featured: false,
-    tags: ["Node.js"]
+    tags: ["Node.js"],
   },
 ];

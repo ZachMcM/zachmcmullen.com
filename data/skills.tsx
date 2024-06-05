@@ -1,70 +1,85 @@
-import { SiC, SiCss3, SiExpo, SiExpress, SiGit, SiHtml5, SiJavascript, SiLinux, SiNextdotjs, SiNodedotjs, SiPrisma, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import {
+  SiC,
+  SiCss3,
+  SiExpo,
+  SiExpress,
+  SiGit,
+  SiHtml5,
+  SiJavascript,
+  SiLinux,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPrisma,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
 type Skill = {
-  name: string,
-  icon: JSX.Element
-}
+  name: string;
+  icon: JSX.Element;
+};
 
 export const skills: Skill[] = [
   {
     name: "TypeScript",
-    icon: <SiTypescript/>
+    icon: <SiTypescript />,
   },
   {
     name: "C",
-    icon: <SiC/>
+    icon: <SiC />,
   },
   {
     name: "Java",
-    icon: <FaJava/>
+    icon: <FaJava />,
   },
   {
     name: "JavaScript",
-    icon: <SiJavascript/>
+    icon: <SiJavascript />,
   },
   {
     name: "React",
-    icon: <SiReact/>
+    icon: <SiReact />,
   },
   {
     name: "Node.js",
-    icon: <SiNodedotjs/>
+    icon: <SiNodedotjs />,
   },
   {
     name: "Express.js",
-    icon: <SiExpress/>
+    icon: <SiExpress />,
   },
   {
     name: "Next.js",
-    icon: <SiNextdotjs/>
+    icon: <SiNextdotjs />,
   },
   {
     name: "Tailwind CSS",
-    icon: <SiTailwindcss/>
+    icon: <SiTailwindcss />,
   },
   {
     name: "Prisma",
-    icon: <SiPrisma/>
+    icon: <SiPrisma />,
   },
   {
     name: "HTML",
-    icon: <SiHtml5/>
+    icon: <SiHtml5 />,
   },
   {
     name: "CSS",
-    icon: <SiCss3/>
+    icon: <SiCss3 />,
   },
   {
     name: "Git",
-    icon: <SiGit/>
+    icon: <SiGit />,
   },
   {
     name: "Expo",
-    icon: <SiExpo/>
+    icon: <SiExpo />,
   },
   {
     name: "Linux",
-    icon: <SiLinux/>
-  }
-]
+    icon: <SiLinux />,
+  },
+];

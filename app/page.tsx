@@ -12,7 +12,7 @@ export default function Home() {
     <div className="flex flex-col gap-16">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-2">
-          <TypewriterWrapper/>
+          <TypewriterWrapper />
           <p className="font-bold text-3xl">
             I'm <span className="text-sky-400">Zach McMullen</span>
           </p>

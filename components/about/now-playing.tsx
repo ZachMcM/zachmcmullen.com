@@ -6,7 +6,6 @@ import { Music } from "lucide-react";
 import Image from "next/image";
 import { Card } from "../ui/card";
 import { Skeleton } from "../ui/skeleton";
-import { AiFillSpotify } from "react-icons/ai";
 
 export function NowPlaying() {
   const {
@@ -40,40 +39,35 @@ export function NowPlaying() {
           </div>
         ) : (
           nowPlaying && (
-            <Card className="w-full flex gap-8 justify-between items-center p-6">
-              <div className="flex gap-8 items-center">
-                <div className="bg-muted h-32 w-32 relative rounded-lg">
-                  <Image
-                    fill
-                    className="rounded-lg object-cover"
-                    src={nowPlaying.albumImageUrl}
-                    alt={nowPlaying.album}
-                  />
+            <Card className="w-full flex gap-8 items-center p-6">
+              <div className="bg-muted h-32 w-32 relative rounded-lg">
+                <Image
+                  fill
+                  className="rounded-lg object-cover"
+                  src={nowPlaying.albumImageUrl}
+                  alt={nowPlaying.album}
+                />
+              </div>
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-1">
+                  <a
+                    href={nowPlaying.url}
+                    className="hover:underline underline-offset-4 font-medium"
+                  >
+                    {nowPlaying.name}
+                  </a>
+                  <p className="text-muted-foreground text-sm">
+                    {nowPlaying.artists.join(", ")}
+                  </p>
                 </div>
-                <div className="flex flex-col gap-4">
-                  <div className="flex flex-col gap-1">
-                    <a
-                      href={nowPlaying.url}
-                      className="hover:underline underline-offset-4 font-medium"
-                    >
-                      {nowPlaying.name}
-                    </a>
-                    <p className="text-muted-foreground text-sm">
-                      {nowPlaying.artists.join(", ")}
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse" />
-                    <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse delay-500" />
-                    <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse delay-1000" />
-                    <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse delay-1500" />
-                    <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse delay-2000" />
-                  </div>
+                <div className="flex items-center gap-1">
+                  <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse" />
+                  <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse delay-500" />
+                  <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse delay-1000" />
+                  <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse delay-1500" />
+                  <div className="h-2.5 w-1.5 bg-secondary rounded-full animate-pulse delay-2000" />
                 </div>
               </div>
-              <a href={nowPlaying.url} className="ont-medium">
-                <AiFillSpotify className="text-muted-foreground hover:text-muted-foreground/80 duration-500 h-11 w-11" />
-              </a>
             </Card>
           )
         )}
