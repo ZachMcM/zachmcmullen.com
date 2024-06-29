@@ -1,8 +1,7 @@
 import { links } from "@/data/links";
-import { Button } from "./ui/button";
-import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
-import { Twitter } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { Button } from "./ui/button";
 
 export function Links({ size }: { size?: "sm" | "lg" }) {
   if (!size) size = "sm";
@@ -21,18 +20,6 @@ export function Links({ size }: { size?: "sm" | "lg" }) {
           <GitHubLogoIcon
             className={cn(size == "sm" ? "h-4 w-4" : "h-5 w-5")}
           />
-        </Button>
-      </a>
-      <a href={links.twitter}>
-        <Button
-          variant="ghost"
-          className={cn(
-            "dark:hover:bg-orange-950 hover:bg-orange-200 hover:text-orange-700 dark:hover:text-orange-400",
-            size == "sm" && "h-9 w-9",
-          )}
-          size="icon"
-        >
-          <Twitter className={cn(size == "sm" ? "h-4 w-4" : "h-5 w-5")} />
         </Button>
       </a>
       <a href={links.linkedin}>
