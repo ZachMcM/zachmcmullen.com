@@ -29,7 +29,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col gap-8">
         <div className="flex w-full items-center justify-between">
-          <p className="font-semibold text-fuchsia-400 text-2xl">
+          <p className="font-bold text-fuchsia-400 text-3xl">
             Featured Projects
           </p>
           <Link href="/projects">
