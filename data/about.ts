@@ -30,4 +30,4 @@ export const experiences: Experience[] = [
 ];
 
 export const resumeLink =
-  "https://drive.google.com/file/d/1IW4ZyPCQ_Xub2eP6W0wh-TLDdJJfRW89/view?usp=sharing";
+  "https://docs.google.com/document/d/1SnXzQu2UcEE_-OiwoRd64iDFE83RYsKsLhAbYKP93dc/edit?usp=sharing";
