@@ -14,7 +14,7 @@ export const projects: Project[] = [
     description:
       "A mobile app for Purdue University students involved in pickup basketball.",
     github: "https://github.com/ZachMcM/purdue-hoops",
-    site: "https://purdue-hoops.vercel.app",
+    site: "https://purdue-hoops.vercel.vercel.app",
     language: "TypeScript",
     featured: true,
     tags: ["React Native", "Prisma", "Expo", "NodeJS", "Express"],
